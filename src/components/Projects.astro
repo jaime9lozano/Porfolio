@@ -1,40 +1,84 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import Net from "./icons/Net.astro"
+import Springboot from "./icons/Springboot.astro"
+import Ionic from "./icons/Ionic.astro"
+import NestJS from "./icons/NestJS.astro"
+import Angular from "./icons/Angular.astro"
+import Laravel from "./icons/Laravel.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
-  },
-  TAILWIND: {
-    name: "Tailwind CSS",
+  NEST: {
+    name: "NestJS",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: NestJS,
   },
+  LARAVEL: {
+    name: "Laravel",
+    class: "bg-[#003159] text-white",
+    icon: Laravel,
+  },
+    ANGULAR: {
+        name: "Angular",
+        class: "bg-[#003159] text-white",
+        icon: Angular,
+    },
+    IONIC: {
+        name: "Ionic",
+        class: "bg-[#003159] text-white",
+        icon: Ionic,
+    },
+    SPRINGBOOT: {
+        name: "Springboot",
+        class: "bg-[#003159] text-white",
+        icon: Springboot,
+    },
+    NET: {
+        name: ".NET",
+        class: "bg-[#003159] text-white",
+        icon: Net,
+    },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "TFG de una pagina web para vender productos de forma online.",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Pagina web para venta de productos online realizada el back con springboot y el front con angular y ionic en la que tiene valoraciones, ofertas, productos, categorias, gestion de usuarios, pedidos , perfiles, restuarantes, storage, websocket... Todo testeado",
+    link: "",
+    github: "https://github.com/jaime9lozano/TFG-JaimeLozano-DiegoTorres",
+    image: "/projects/TFGMacJava.png",
+    tags: [TAGS.ANGULAR, TAGS.IONIC, TAGS.SPRINGBOOT],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Pagina web para venta de productos online realizada en Laravel.",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Pagina web para venta de productos online realizada en PHP con Laravel en la que tiene productos, categorias, gestion de usuarios, pedidos , perfiles, restuarantes, storage... Todo testeado",
+      github: "https://github.com/jaime9lozano/MacJavaServer-Laravel",
+      link:"",
+    image: "/projects/Laravel.png",
+    tags: [TAGS.LARAVEL],
   },
+    {
+        title: "Pagina web para venta de productos online realizada en NestJS.",
+        description:
+            "Pagina web para venta de productos online realizada en Typescript con NestJS en la que tiene productos, categorias, gestion de usuarios, pedidos , perfiles, restuarantes, storage... Todo testeado",
+        github: "https://github.com/DiegoTorresMijarra/MacJavaServer-Nest",
+        link:"",
+        image: "/projects/NestJS.png",
+        tags: [TAGS.NEST],
+    },
+    ,
+    {
+        title: "Pagina web para venta y compra de productos online realizada en .NET.",
+        description:
+            "Pagina web que sirve tanto para vendedores que suben sus productos y pueden obtener tambien productos de proveedores, poner ofertas, gestion de sus productos y su tienda, y otro usuario como comprador que puede comprar productos y poner valoraciones, pedir devoluciones y el admin con toda la gestion de usuarios.",
+        github: "",
+        link:"",
+        image: "/projects/.NET.png",
+        tags: [TAGS.NET],
+    },
 ]
 ---
 
