@@ -1,4 +1,5 @@
 ---
+import GitHub from "./icons/GitHub.astro";
 const personalImageAlt = "Miguel Ángel"
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
@@ -9,12 +10,12 @@ import SocialPill from "@/components/SocialPill.astro"
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
-        style="width: 150px; height: 150px; border-radius: 50%;"
+        style="width: 15%; border-radius: 50%;"
       src="/FotoPerfil.jpg"
       alt={personalImageAlt}
     />
     <a
-      href="https://github.com/jaime9lozano"
+      href="https://www.linkedin.com/in/jaime-lozano-carbonell-246702188/"
       target="_blank"
       rel="noopener"
       class="flex items-center transition md:justify-center md:hover:scale-105"
@@ -38,9 +39,13 @@ import SocialPill from "@/components/SocialPill.astro"
       <MailIcon class="size-4" />
       Contáctame
     </SocialPill>
-    <SocialPill href="https://github.com/jaime9lozano">
+    <SocialPill href="https://www.linkedin.com/in/jaime-lozano-carbonell-246702188/">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/jaime9lozano">
+      <GitHub class="size-4" />
+      GitHub
     </SocialPill>
   </nav>
 </div>
