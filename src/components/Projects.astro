@@ -1,6 +1,7 @@
 ---
 import GitHub from "./icons/GitHub.astro"
 import Net from "./icons/Net.astro"
+import Django from "./icons/Django.astro"
 import Springboot from "./icons/Springboot.astro"
 import Ionic from "./icons/Ionic.astro"
 import NestJS from "./icons/NestJS.astro"
@@ -40,6 +41,11 @@ const TAGS = {
         class: "bg-[#003159] text-white",
         icon: Net,
     },
+    DJANGO: {
+        name: "DJANGO",
+        class: "bg-[#003159] text-white",
+        icon: Django,
+    },
 }
 const PROJECTS = [
   {
@@ -77,6 +83,15 @@ const PROJECTS = [
         link:"",
         image: "/projects/.NET.png",
         tags: [TAGS.NET],
+    },
+    {
+        title: "Pagina web FunkoLandia con venta de funkos.",
+        description:
+            "Pagina web para venta de funkos online realizada en Python con Django en la que tiene funkos, categorias, gestion de usuarios, pedidos , perfiles...",
+        github: "https://github.com/jaime9lozano/FunkoLandiaDjango",
+        link:"",
+        image: "/projects/Django.png",
+        tags: [TAGS.DJANGO],
     },
 ]
 ---
