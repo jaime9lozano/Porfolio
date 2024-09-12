@@ -9,6 +9,7 @@ import Angular from "./icons/Angular.astro"
 import Laravel from "./icons/Laravel.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import React from "./icons/React.astro";
 
 const TAGS = {
   NEST: {
@@ -46,8 +47,22 @@ const TAGS = {
         class: "bg-[#003159] text-white",
         icon: Django,
     },
+    REACT: {
+        name: "REACT",
+        class: "bg-[#003159] text-white",
+        icon: React,
+    },
 }
 const PROJECTS = [
+    {
+        title: "FilmTeca, biblioteca de peliculas para informarte sobre ellas y ver y dejar valoraciones.",
+        description:
+            "Pagina web realizada el back con NestJS y el front con React para conseguir una biblioteca de peliculas con informacion de directores, actores, premios, generos, valoraciones, gestion de usuarios...",
+        link: "https://filmteca.netlify.app/",
+        github: "https://github.com/jaime9lozano/FilmTeca",
+        image: "/projects/FilmTeca.png",
+        tags: [TAGS.NEST, TAGS.REACT],
+    },
   {
     title: "TFG de una pagina web para vender productos de forma online.",
     description:
